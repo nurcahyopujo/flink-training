@@ -39,7 +39,6 @@ Exercises that go along with the training content in the documentation.
 1. [Learn about the data](#learn-about-the-data)
 1. [Modify `ExerciseBase`](#modify-exercisebase)
 1. [Run and debug Flink programs in your IDE](#run-and-debug-flink-programs-in-your-ide)
-1. [Exercises, Tests, and Solutions](#exercises-tests-and-solutions)
 
 [**Labs**](LABS-OVERVIEW.md)
 
@@ -65,6 +64,7 @@ Flink supports Linux, OS X, and Windows as development environments for Flink pr
 This `flink-training` project contains exercises, tests, and reference solutions for the programming exercises. Clone the `flink-training` project from Github and build it.
 
 > **:information_source: Repository Layout:** This repository has several branches set up pointing to different Apache Flink versions, similarly to the [apache/flink](https://github.com/apache/flink) repository with:
+>
 > - a release branch for each minor version of Apache Flink, e.g. `release-1.10`, and
 > - a `master` branch that points to the current Flink release (not `flink:master`!)
 >
@@ -98,8 +98,8 @@ If you are in China, we recommend configuring the maven repository to use a mirr
         }
     }
 ```
-</details>
 
+</details>
 
 ### Import the flink-training project into your IDE
 
@@ -111,7 +111,7 @@ Once that’s done you should be able to open [`RideCleansingTest`](ride-cleansi
 
 ## Using the Taxi Data Streams
 
-These exercises use data [generators](common/src/main/java/org/apache/flink/training/exercises/common/sources) that produce simulated event streams 
+These exercises use data [generators](common/src/main/java/org/apache/flink/training/exercises/common/sources) that produce simulated event streams
 inspired by those shared by the [New York City Taxi & Limousine Commission](http://www.nyc.gov/html/tlc/html/home/home.shtml)
 in their public [data set](https://uofi.app.box.com/NYCtaxidata) about taxi rides in New York City.
 
@@ -169,20 +169,6 @@ Assuming you have an IDE with this `flink-training` project imported, you can ru
 
 - Open the `org.apache.flink.training.examples.ridecount.RideCountExample` class in your IDE
 - Run (or debug) the `main()` method of the `RideCountExample` class using your IDE.
-
-### Exercises, Tests, and Solutions
-
-Each of these exercises includes an `...Exercise` class with most of the necessary boilerplate code for getting started, as well as a JUnit Test class (`...Test`) with a few tests for your implementation, and a `...Solution` class with a complete solution.
-
-> **:information_source: Note:** As long as your `...Exercise` class is throwing a `MissingSolutionException`, the provided JUnit test classes will ignore that failure and verify the correctness of the solution implementation instead.
-
-There are Java and Scala versions of all the exercise, test, and solution classes.
-
------
-
-Now you are ready to begin with the first exercise in our [**Labs**](LABS-OVERVIEW.md).
-
------
 
 ## License
 

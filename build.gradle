@@ -101,8 +101,8 @@ subprojects {
 
     // make flinkShadowJar dependencies available:
     sourceSets {
-        main.java.srcDirs += 'src/solution/java'
-        main.scala.srcDirs += 'src/solution/scala'
+        // main.java.srcDirs += 'src/solution/java'
+        // main.scala.srcDirs += 'src/solution/scala'
         main.compileClasspath += configurations.flinkShadowJar
         main.runtimeClasspath += configurations.flinkShadowJar
 
